@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Righteous&display=swap" rel="stylesheet">
+    
+    <title>Jogo da Memória</title>  
+    <link rel="stylesheet" type="text/css" href="./style.css">  
+</head>
+<body>
+    <!-- Título do jogo -->
+    <h1>Jogo da Memória</h1>
+
+    <!-- Área do tabuleiro do jogo (gerado dinamicamente via JavaScript) -->
+    <div id="gameBoard"></div>
+
+    <!-- Tela de fim de jogo (inicialmente oculta) -->
+    <div id="gameOver">
+        <div>Parabéns, você completou o jogo!</div>
+        <button id="restart" onclick="restart()">Jogue novamente</button>
+    </div>
+
+    <!-- Scripts do jogo -->
+    <script src="./game.js"></script>  <!-- Lógica principal do jogo -->
+    <script src="./script.js"></script>  <!-- Outras funções -->
+</body>
+</html>
